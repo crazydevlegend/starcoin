@@ -1134,6 +1134,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "cast"
+version = "0.3.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "37b2a672a2cb129a2e41c10b1224bb368f9f37a2b16b612598138befd7b37eb5"
+
+[[package]]
 name = "cc"
 version = "1.0.71"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1258,11 +1264,11 @@ dependencies = [
 
 [[package]]
 name = "clap"
-version = "2.33.3"
+version = "2.34.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "37e58ac78573c40708d45522f0d80fa2f01cc4f9b4e2bf749807255454312002"
+checksum = "a0610544180c38b88101fecf2dd634b174a62eef6946f84dfc6a7127512b381c"
 dependencies = [
- "ansi_term 0.11.0",
+ "ansi_term 0.12.1",
  "atty",
  "bitflags",
  "strsim 0.8.0",
@@ -1530,13 +1536,13 @@ dependencies = [
 
 [[package]]
 name = "criterion"
-version = "0.3.4"
+version = "0.3.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ab327ed7354547cc2ef43cbe20ef68b988e70b4b593cbd66a2a61733123a3d23"
+checksum = "b01d6de93b2b6c65e17c634a26653a29d107b3c98c607c765bf38d041531cd8f"
 dependencies = [
  "atty",
- "cast",
- "clap 2.33.3",
+ "cast 0.3.0",
+ "clap 2.34.0",
  "criterion-plot",
  "csv",
  "itertools 0.10.1",
@@ -1556,12 +1562,12 @@ dependencies = [
 
 [[package]]
 name = "criterion-plot"
-version = "0.4.3"
+version = "0.4.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e022feadec601fba1649cfa83586381a4ad31c6bf3a9ab7d408118b05dd9889d"
+checksum = "d00996de9f2f7559f7f4dc286073197f83e92256a59ed395f9aac01fe717da57"
 dependencies = [
- "cast",
- "itertools 0.9.0",
+ "cast 0.2.3",
+ "itertools 0.10.1",
 ]
 
 [[package]]
@@ -1828,7 +1834,7 @@ version = "0.6.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3ff266b008aaa8250f1f8f58b820da30270ca572bee708ac21c7dbcd52a82e02"
 dependencies = [
- "clap 2.33.3",
+ "clap 2.34.0",
  "gherkin_rust",
  "globwalk 0.7.3",
  "pathdiff 0.1.0",
@@ -2207,7 +2213,7 @@ dependencies = [
  "bytes 1.1.0",
  "cc",
  "chrono",
- "clap 2.33.3",
+ "clap 2.34.0",
  "codespan-reporting",
  "crossbeam-channel 0.5.1",
  "crossbeam-deque 0.8.1",
@@ -3862,15 +3868,6 @@ dependencies = [
 
 [[package]]
 name = "itertools"
-version = "0.9.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "284f18f85651fe11e8a991b2adb42cb078325c996ed026d994719efcfca1d54b"
-dependencies = [
- "either",
-]
-
-[[package]]
-name = "itertools"
 version = "0.10.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "69ddb889f9d0d08a67338271fa9b62996bc788c7796a5c18cf057420aaed5eaf"
@@ -3895,9 +3892,9 @@ dependencies = [
 
 [[package]]
 name = "js-sys"
-version = "0.3.50"
+version = "0.3.58"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2d99f9e3e84b8f67f846ef5b4cbbc3b1c29f6c759fcbce6f01aa0e73d932a24c"
+checksum = "c3fac17f7123a73ca62df411b1bf727ccc805daa070338fda671c86dac1bdc27"
 dependencies = [
  "wasm-bindgen",
 ]
@@ -5393,7 +5390,7 @@ dependencies = [
  "boogie-backend",
  "bytecode",
  "bytecode-interpreter",
- "clap 2.33.3",
+ "clap 2.34.0",
  "codespan 0.11.1",
  "codespan-reporting",
  "diem-workspace-hack",
@@ -6490,9 +6487,9 @@ checksum = "3831453b3449ceb48b6d9c7ad7c96d5ea673e9b470a1dc578c2ce6521230884c"
 
 [[package]]
 name = "plotters"
-version = "0.3.0"
+version = "0.3.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "45ca0ae5f169d0917a7c7f5a9c1a3d3d9598f18f529dd2b8373ed988efea307a"
+checksum = "9428003b84df1496fb9d6eeee9c5f8145cb41ca375eb0dad204328888832811f"
 dependencies = [
  "num-traits",
  "plotters-backend",
@@ -6503,9 +6500,9 @@ dependencies = [
 
 [[package]]
 name = "plotters-backend"
-version = "0.3.0"
+version = "0.3.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b07fffcddc1cb3a1de753caa4e4df03b79922ba43cf882acc1bdd7e8df9f4590"
+checksum = "193228616381fecdc1224c62e96946dfbc73ff4384fba576e052ff8c1bea8142"
 
 [[package]]
 name = "plotters-svg"
@@ -7788,7 +7785,7 @@ name = "scmd"
 version = "1.8.0-rc.1"
 dependencies = [
  "anyhow",
- "clap 2.33.3",
+ "clap 2.34.0",
  "cli-table",
  "ctrlc",
  "once_cell",
@@ -8559,7 +8556,7 @@ version = "1.8.0-rc.1"
 dependencies = [
  "anyhow",
  "bcs-ext",
- "clap 2.33.3",
+ "clap 2.34.0",
  "once_cell",
  "proptest",
  "proptest-derive",
@@ -8740,7 +8737,7 @@ name = "starcoin-config"
 version = "1.8.0-rc.1"
 dependencies = [
  "anyhow",
- "clap 2.33.3",
+ "clap 2.34.0",
  "diem-temppath",
  "dirs-next",
  "git-version",
@@ -9227,7 +9224,7 @@ version = "1.8.0-rc.1"
 dependencies = [
  "anyhow",
  "atty",
- "clap 2.33.3",
+ "clap 2.34.0",
  "codespan-reporting",
  "datatest-stable 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "diem-temppath",
@@ -10171,7 +10168,7 @@ dependencies = [
  "anyhow",
  "bcs-ext",
  "bytecode-verifier",
- "clap 2.33.3",
+ "clap 2.34.0",
  "datatest-stable 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "fs_extra",
  "include_dir",
@@ -10283,7 +10280,7 @@ version = "0.2.18"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "16c2cdbf9cc375f15d1b4141bc48aeef444806655cd0e904207edc8d68d86ed7"
 dependencies = [
- "clap 2.33.3",
+ "clap 2.34.0",
  "structopt-derive 0.2.18",
 ]
 
@@ -10293,7 +10290,7 @@ version = "0.3.25"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "40b9788f4202aa75c240ecc9c15c65185e6a39ccdeb0fd5d008b98825464c87c"
 dependencies = [
- "clap 2.33.3",
+ "clap 2.34.0",
  "lazy_static",
  "structopt-derive 0.4.18",
 ]
@@ -10615,7 +10612,7 @@ name = "testsuite"
 version = "1.8.0-rc.1"
 dependencies = [
  "anyhow",
- "clap 2.33.3",
+ "clap 2.34.0",
  "cucumber_rust",
  "jsonpath",
  "lazy_static",
@@ -11746,9 +11743,9 @@ checksum = "1a143597ca7c7793eff794def352d41792a93c481eb1042423ff7ff72ba2c31f"
 
 [[package]]
 name = "wasm-bindgen"
-version = "0.2.73"
+version = "0.2.81"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "83240549659d187488f91f33c0f8547cbfef0b2088bc470c116d1d260ef623d9"
+checksum = "7c53b543413a17a202f4be280a7e5c62a1c69345f5de525ee64f8cfdbc954994"
 dependencies = [
  "cfg-if 1.0.0",
  "serde",
@@ -11758,9 +11755,9 @@ dependencies = [
 
 [[package]]
 name = "wasm-bindgen-backend"
-version = "0.2.73"
+version = "0.2.81"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ae70622411ca953215ca6d06d3ebeb1e915f0f6613e3b495122878d7ebec7dae"
+checksum = "5491a68ab4500fa6b4d726bd67408630c3dbe9c4fe7bda16d5c82a1fd8c7340a"
 dependencies = [
  "bumpalo",
  "lazy_static",
@@ -11785,9 +11782,9 @@ dependencies = [
 
 [[package]]
 name = "wasm-bindgen-macro"
-version = "0.2.73"
+version = "0.2.81"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3e734d91443f177bfdb41969de821e15c516931c3c3db3d318fa1b68975d0f6f"
+checksum = "c441e177922bc58f1e12c022624b6216378e5febc2f0533e41ba443d505b80aa"
 dependencies = [
  "quote 1.0.9",
  "wasm-bindgen-macro-support",
@@ -11795,9 +11792,9 @@ dependencies = [
 
 [[package]]
 name = "wasm-bindgen-macro-support"
-version = "0.2.73"
+version = "0.2.81"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d53739ff08c8a68b0fdbcd54c372b8ab800b1449ab3c9d706503bc7dd1621b2c"
+checksum = "7d94ac45fcf608c1f45ef53e748d35660f168490c10b23704c7779ab8f5c3048"
 dependencies = [
  "proc-macro2 1.0.30",
  "quote 1.0.9",
@@ -11808,9 +11805,9 @@ dependencies = [
 
 [[package]]
 name = "wasm-bindgen-shared"
-version = "0.2.73"
+version = "0.2.81"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d9a543ae66aa233d14bb765ed9af4a33e81b8b58d1584cf1b47ff8cd0b9e4489"
+checksum = "6a89911bd99e5f3659ec4acf9c4d93b0a90fe4a2a11f15328472058edc5261be"
 
 [[package]]
 name = "wasm-timer"
@@ -11829,9 +11826,9 @@ dependencies = [
 
 [[package]]
 name = "web-sys"
-version = "0.3.50"
+version = "0.3.58"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a905d57e488fec8861446d3393670fb50d27a262344013181c2cdf9fff5481be"
+checksum = "2fed94beee57daf8dd7d51f2b15dc2bcde92d7a72304cdf662a4371008b71b90"
 dependencies = [
  "js-sys",
  "wasm-bindgen",
